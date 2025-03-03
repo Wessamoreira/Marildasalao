@@ -1,0 +1,220 @@
+/* Resetando estilos padrão */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Reduzindo a altura do cabeçalho */
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 5px 0; /* Menos espaço interno */
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustando a logo para ser menor */
+.logo {
+    max-height: 50px; /* Diminui a altura */
+}
+
+/* Ajuste nos botões */
+.nav-links button {
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 2px solid black; /* Deixa a borda preta mais visível */
+    border-radius: 8px;
+}
+
+/* Ajustando o banner para não ser tampado */
+.banner {
+    margin-top: 75px; /* Margem menor para encaixar certinho */
+}
+
+
+/* Estilizando os botões do cabeçalho */
+.nav-links button {
+    font-size: 14px;
+    padding: 5px 12px;
+    border: 1px solid black;  /* Contorno preto */
+    border-radius: 20px;
+    background: transparent;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efeito de hover nos botões */
+.nav-links button:hover {
+    background: #e60073;
+    border: 1px solid black;  /* Contorno preto */
+    color: white;
+}
+
+
+
+
+/* Estilização do Menu */
+.nav-links {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+/* Botões do Menu */
+.btn-custom {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background: #fff;
+    color: #180e0e;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .salon-name {
+        font-size: 18px;
+    }
+
+    .btn-custom {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+
+
+/* Estilização do banner */
+.banner {
+    background: url('../img/IMG_0447.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-text {
+    font-family: 'Great Vibes', cursive;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Estilização da logo */
+.logo {
+    height: 50px; /* Ajuste conforme necessário */
+}
+
+
+/* Estilos dos cards */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body .btn {
+    background-color: #c8ad95;
+    border: none;
+}
+
+.card-body .btn:hover {
+    background-color: #e60073;
+}
+
+/* Localização */
+.map-container {
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Botões flutuantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #eed3bb;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.floating-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.selection h2{
+    text-align: center;
+}
+
+.nos {
+    text-align: center;
+}
+
+
+
+
