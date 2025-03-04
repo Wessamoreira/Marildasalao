@@ -78,16 +78,28 @@
             <a href="index.html">
                 <img src="img/MARILDA MARTA.png.PNG" alt="Logo Salão Elegance" class="logo">
             </a>
+            
+            <!-- Menu Responsivo -->
             <nav>
-                <ul class="nav-links">
+                <button class="btn btn-outline-primary d-md-none" id="menu-toggle">Menu</button>
+                <ul class="nav-links d-none d-md-flex">
                     <li><button class="btn btn-outline-primary" onclick="location.href='index.html'">Início</button></li>
                     <li><button class="btn btn-outline-primary" onclick="location.href='servicos.html'">Serviços</button></li>
                     <li><button class="btn btn-outline-primary" onclick="location.href='agendamento.html'">Agendamento</button></li>
                     <li><button class="btn btn-outline-primary" onclick="location.href='produtos.html'">Produtos</button></li>
                 </ul>
+                
+                <!-- Menu Dropdown para mobile -->
+                <ul class="nav-links d-md-none dropdown-menu" id="mobile-menu">
+                    <li><button class="dropdown-item" onclick="location.href='index.html'">Início</button></li>
+                    <li><button class="dropdown-item" onclick="location.href='servicos.html'">Serviços</button></li>
+                    <li><button class="dropdown-item" onclick="location.href='agendamento.html'">Agendamento</button></li>
+                    <li><button class="dropdown-item" onclick="location.href='produtos.html'">Produtos</button></li>
+                </ul>
             </nav>
         </div>
     </header>
+    
 
     <section class="banner">
         <div class="banner-content">
@@ -183,6 +195,13 @@
             <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
         </p>
     </footer>
+
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function() {
+            const menu = document.getElementById("mobile-menu");
+            menu.classList.toggle("show");
+        });
+    </script>
 
 </body>
 </html>

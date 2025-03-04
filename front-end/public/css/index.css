@@ -218,3 +218,48 @@ footer {
 
 
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+#menu-toggle {
+background-color: #eed3bb; /* Cor de fundo (rosa) */
+color: rgb(5, 5, 5); /* Cor do texto */
+border: none; /* Remover borda */
+padding: 10px 15px; /* Espaçamento interno */
+border-radius: 5px; /* Bordas arredondadas */
+font-size: 16px; /* Tamanho da fonte */
+cursor: pointer; /* Cursor de clique */
+}
+
+/* Mudar cor quando passar o mouse */
+#menu-toggle:hover {
+    background-color: #d64994; /* Cor mais escura ao passar o mouse */
+}
+
